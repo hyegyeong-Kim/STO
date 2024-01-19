@@ -23,19 +23,16 @@ $(function(){
     var winh = $(window).height()
     var t_1
     var t_2
-    $('.bind').each(function(){
-      t_1 = $(this).offset().top
-      if(scrt >= t_1 - winh){
-        $(this).children('img').addClass('view_lt')
-        $(this).children('ul').addClass('view_rt')
-      }
-    })//each
-    $('.goods').each(function(){
-      t_2 = $(this).offset().top
-      if(scrt >= t_2 * 0.5){
-        $(this).children('.inner').children('dl').addClass('view_bottom')
-      }
-    })
+    t_1 = $('.bind').offset().top
+    t_2 = $('.goods').offset().top
+    if(scrt >= t_1 - winh){
+      $('.bind').children('img').addClass('view_lt')
+      $('.bind').children('ul').addClass('view_rt')
+    };
+    if(scrt >= t_2 * 0.5){
+      $('.goods').children('.inner').children('dl').addClass('view_bottom')
+    }
+
     console.log(t_2 + '/' + scrt + '/' + winh);
   }//fn
 
