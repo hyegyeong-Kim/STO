@@ -110,9 +110,10 @@ footer .inner > div > ul li  a {font-size:16px; font-weight:500;}
 @media screen and (max-width:850px) {
   footer .inner > div {display:block;}
   footer .inner > div > ul {margin-top:20px; justify-content:flex-start; flex-wrap:wrap;}
+  footer .inner > div > ul > li:last-of-type {padding:5px 0 0 0}
   .footer_bind > .icon dd {justify-content:flex-start;}
 }
 @media screen and (max-width:570px) { 
   footer .inner > div > ul {flex-wrap:wrap;}
-  footer .inner > div > ul li {padding:0 10px; }
+  footer .inner > div > ul li {padding:0 15px; }
 }
