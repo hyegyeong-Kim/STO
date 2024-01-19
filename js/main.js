@@ -41,6 +41,8 @@ $(function(){
 
   $(window).scroll(function(){
     motion()
+  }).resize(function(){
+    motion()
   })
 
 /* main */
