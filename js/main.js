@@ -23,6 +23,4 @@ function motion(){
   if(scrt >= t_2 * 0.5){
     $('.goods').children('.inner').children('dl').addClass('view_bottom')
   }
-
-  console.log(t_2 + '/' + scrt + '/' + winh);
 }//fn
