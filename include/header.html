@@ -1,0 +1,60 @@
+<div class="inner">
+  <h1><a href="#none">ST Galaxia</a></h1>
+  <nav>
+    <ul>
+      <li><a href="#none">브랜드 스토리</a></li>
+      <li><a href="#">서비스 소개</a></li>
+      <li><a href="../pro.html">홍보영상</a></li>
+      <li><a href="#none">앱다운로드</a></li>
+      <li><a href="#none">고객센터</a></li>
+      <li><a href="#none">회사소개</a></li>
+    </ul>
+  </nav>
+  <div class="hamber_btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+
+<script>
+  $(function(){
+  /* include */
+  // $('header').load('./include/header.html');
+  // $('footer').load('./include/footer.html');
+  /* //include */
+
+  ham_btn('.hamber_btn');/* 모바일 header 햄버거 애니메이션 */
+
+  $('.hamber_btn').on('click', function(){/* 모바일 header gnb 노출 */
+    $('html, body').toggleClass('overflow');
+    $('nav').toggleClass('show');
+  });
+})//ready
+
+$(window).scroll(function(){
+  header_scroll();
+}).resize(function(){
+  header_scroll();
+})
+
+function header_scroll(){
+  var scrt = $(window).scrollTop()
+  if(scrt > 0) {
+    $('header').addClass('bg')
+  }else if (scrt == 0) {
+    $('header').removeClass('bg')
+  }
+}
+
+function ham_btn(_target){
+  var _this = document.querySelector(_target)
+  if(_this != null){
+      _this.addEventListener('click', ()=>{
+          for(i=0; i<_this.children.length; i++){
+              _this.children[i].classList.toggle('on')
+          }
+      })
+  }
+}
+</script>
