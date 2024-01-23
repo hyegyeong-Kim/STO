@@ -1,0 +1,28 @@
+.cus_visual {padding:106px 0; background-image: url('../image/cus/고객센터_bg.png'); background-size: cover; background-repeat: no-repeat; background-position:center;}
+.cus_visual .inner {max-width:1024px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;}
+.cus_visual .inner .title > li {display:flex; align-items:baseline;}
+.cus_visual .inner .title li strong {margin-bottom:52px; color:#333; font-size:40px; font-weight:700;}
+.cus_visual .inner .title > li > img {width:16px; height:16px; margin-right:10px;}
+.cus_visual .inner .title li > b {margin-right:22px; color:#333; font-size:18px; font-weight:500;}
+.cus_visual .inner .title li > p {color:#333; font-size:18px; font-weight:300; display:flex; flex-direction:column;}
+.cus_visual .inner .title li:nth-of-type(3) {margin:33px 0 42px 0;}
+.cus_visual .inner .title li:last-of-type {width:281px; height:54px; padding:15px 10px 15px 10px; border:1px solid #6F767D; border-radius:8px; background-color:rgba(255,255,255,0.5);}  
+.cus_visual .inner .title li button {width:inherit; margin:0 auto; font-size:20px; font-weight:600;}
+.cus_visual .inner .title li:last-of-type:hover {background-color:#8A8A8A; border:#8A8A8A; color:#fff;}
+
+.cus_visual .tab_wrap {width:476px;}
+.cus_visual .tab_type_01 {overflow:hidden; display:flex; align-items:flex-end;}
+.cus_visual .tab_type_01 li {position:relative;}
+.cus_visual .tab_type_01 li + li {margin-left:4px;}
+.cus_visual .tab_type_01 li > a {padding:15px 53px 11px 53px; color:#6F767D; font-size:20px; font-weight:300; border:1px solid #B8C3D1; border-bottom:0 !important; border-radius:8px 8px 0px 0px; display:inline-block;}
+.cus_visual .tab_type_01 li.current:before, .cus_visual .tab_type_01 li.current:after {border-bottom:1px solid #6F767D; content:''; position:absolute; bottom:0; display:block;}
+.cus_visual .tab_type_01 li.current:before {right:100%; left:-1000%;}
+.cus_visual .tab_type_01 li.current:after {right:-1000%; left:100%;}
+.cus_visual .tab_type_01 li.current a{color:#333; font-weight:600; border:1px solid #6F767D;}
+.cus_visual .tab_content {margin-top:30px;}
+.cus_visual .more {position:absolute; top:4%; right:0;}
+.cus_visual .more:hover {content: url('../image/cus/icon_more_hover.png');}
+.cus_visual .tab_content > div {display:none;}
+.cus_visual .tab_content > div.current{display:block;}
+.cus_visual .tab_content > div > ul > li > dl {margin-bottom:22px; display:flex; justify-content:space-between;}
+.cus_visual .tab_content div ul li > dl > dt, .cus_visual .tab_content div ul li > dl > dd {color:#333; font-size:18px; font-weight:300;}
