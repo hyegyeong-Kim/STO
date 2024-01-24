@@ -43,7 +43,7 @@ header nav ul li:hover a::after{width:110%;}
 }
 
 /*------main--------*/
-.main_visual {width:100%; max-height: calc(100vh + 0px);  height: 56.24vw; position:relative; border:1px solid blue; background-color: #2ECCC8;}
+.main_visual {width:100%; max-height: calc(100vh + 0px);  height: 56.24vw; position:relative; background-color: #2ECCC8;}
 .visual_img {object-fit:cover; height:100%;}
 .play_btn {position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);}
 
