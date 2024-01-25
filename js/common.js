@@ -4,6 +4,10 @@ $(function(){
   $('footer').load('./include/footer.html');
   /* //include */
   tab_active('.tab_wrap > ul', 'click')
+  $('.board_type_toggle dt a').click(function() {
+    toggle_slide(this);
+    });
+    open_close ()
 })//ready
 
 
@@ -38,7 +42,42 @@ function tab_active(_target, evt) {//_target : 대상 / evt : 핸들러
       }
   })
 }
-
-
 /* //tab */
 
+/* accodian */
+function toggle_slide(_target) {
+    var _target = $(_target);
+    _target.closest('dl').hasClass('single') ? // 하나만 오픈
+        (
+            _target.parent().hasClass('active') ?
+            (
+                _target.parent().next('dd').stop().slideUp(),
+                _target.parent().removeClass('active')
+            ) : (
+                _target.parent().addClass('active'),
+                _target.parent().siblings().removeClass('active'),
+                _target.closest('dl').children('dd').stop().slideUp(),
+                _target.parent().next('dd').stop().slideDown()
+            )
+        ) : ( // 각각 제어
+            _target.parent().hasClass('active') ?
+            (
+                _target.parent().next('dd').stop().slideUp(),
+                _target.parent().removeClass('active')
+            ) : (
+                _target.parent().addClass('active'),
+                _target.parent().next('dd').stop().slideDown()
+            )
+        )
+}
+
+function open_close (){
+    $('.title li button').on('click', function(){
+        $('.banner').css({"display":"block"})
+        $('body').css({"overflow":"hidden"})
+    })
+    $('.banner em, .banner > dl > dt > img, .banner dd button').on('click', function(){
+        $('.banner').css({"display":"none"})
+        $('body').css({"overflow":"unset"})
+    })
+}
