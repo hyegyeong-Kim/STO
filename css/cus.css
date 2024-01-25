@@ -45,7 +45,7 @@ background:#7E8184; display:block;}
   .cus_visual .inner {flex-direction:column;}
   .title {margin-bottom:100px; display:flex; flex-direction:column; }
   .title li:last-of-type {width:100%; margin:0 auto;}
-  .cus_visual .inner .title strong {font-size:33px;}
+  .cus_visual .inner .title strong {font-size:33px !important;}
   .cus_visual .tab_wrap {width:90%;}
   .cus_visual .tab_type_01 li > a {padding:15px 24px 11px 24px;}
   .cus_visual .more {top:100%; right:45%; }
