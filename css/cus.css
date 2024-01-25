@@ -137,12 +137,6 @@ dt.active img.view_btn {content: url('../image/cus/btn_up.png'); width:24px; hei
 .guide_content ul > li > p:last-of-type {margin-bottom:70px;}
 .list_btn {padding:15px 40px; color:#fff; font-size:18px; font-weight:400; border-radius:8px; background:#7E8184;}
 
-@media screen and (max-width:1034px) {
-  #container .content .inner {width:94%; margin:0 auto;}
-  .guide_content > ul {width:100%; margin:0 auto;}
-  .guide_content > ul > li:last-of-type {margin-top:30px;}
-  .guide_content > ul > .date + li {width: 100%; margin: auto;}
-}
 @media screen and (max-width:1197px) {
   .guide .no {width:8%;}
   .guide .goods_no {width:14%;}
@@ -150,6 +144,13 @@ dt.active img.view_btn {content: url('../image/cus/btn_up.png'); width:24px; hei
   .guide .add {width:10%;}
   .guide .writer {width:10%;}
   .guide .w_date {width:20%}
+}
+
+@media screen and (max-width:1034px) {
+  #container .content .inner {width:94%; margin:0 auto;}
+  .guide_content > ul {width:100%; margin:0 auto;}
+  .guide_content > ul > li:last-of-type {margin-top:30px;}
+  .guide_content > ul > .date + li {width: 100%; margin: auto;}
 }
 
 @media screen and (max-width:700px) {
@@ -183,4 +184,5 @@ dt.active img.view_btn {content: url('../image/cus/btn_up.png'); width:24px; hei
   .notice .board_type_toggle > dt a {padding:0;}
   .board_type_list01 > ul > li > * {height:100%; padding:0;}
   .board_type_toggle > dd {padding: 15px;}
+  .paging > div > * {width:30px; height:30px; line-height: 30px;}
 }
