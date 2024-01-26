@@ -1,0 +1,18 @@
+.privacy  {margin:75px 0 200px 0; }
+label {margin-right:15px;}
+select {width:150px; height:30px; border-width: 0 0 1px;}
+.privacy .inner > strong {color:#333; font-size:40px; font-weight:700; text-align:center; display:block; text-align:center;}
+.privacy form  {width:100%; margin:30px 0; text-align:right;}
+.privacy form label {font-weight:600;}
+.privacy dl dt {margin-bottom:30px; font-size:22px; font-weight:500;}
+.privacy dl dd {margin-bottom:30px; font-size:18px;}
+
+@media screen and (max-width:700px) {
+  .privacy .inner > strong {font-size:33px;}
+  .privacy dl dt {font-size:20px;}
+  .privacy dl dd {font-size:16px;}
+  .privacy .header{display:block;}
+  .privacy .board_type_list01 > ul > li {font-size:14px;}
+  .privacy .board_type_list01 > ul > li > * {padding:15px 5px;}
+  * {word-break:auto-phrase;}
+}
