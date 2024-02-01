@@ -3,7 +3,7 @@
 /*------header--------*/
 header {padding:25px 0; position:relative;}
 header .inner {display:flex; justify-content:space-between; align-items:center;}
-header h1 a { font-size:30px; font-weight:800;}
+header h1 a {width:230px; font-size:30px; font-weight:800; display:block;}
 header nav ul {display:flex;}
 header nav ul li a{margin-right:45px; color:#444444; font-size:18px; font-weight:600; position:relative;}
 header nav ul li:last-of-type a {margin-right:0px;}
