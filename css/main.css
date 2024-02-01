@@ -105,8 +105,7 @@ footer .inner > div > ul {display:flex; justify-content:space-between;}
 footer .inner > div > ul li {padding:0 33px; position:relative;}
 footer .inner > div > ul li::after {content:''; width:1px; height:80%; background:#fff; position:absolute; top:50%; right:0; display:inline-block; transform:translateY(-50%);}
 footer .inner > div > ul li:last-of-type:after {display:none;}
-footer .inner > div > ul li:first-of-type {padding-left:0}
-footer .inner > div > ul li:last-of-type {padding-right:0}
+footer .inner > div > ul {margin-left:-15px}
 footer .inner > div > ul li  a {font-size:16px; font-weight:500;}
 .footer_bind  {width:100%; padding-top:23px;}
 .footer_bind > dl:first-of-type {margin-right:150px;}
@@ -129,6 +128,7 @@ footer .inner > div > ul li  a {font-size:16px; font-weight:500;}
 }
 @media screen and (max-width:570px) { 
   footer .inner > div > ul {flex-wrap:wrap;}
-  footer .inner > div > ul li {padding:0 15px
-    ; }
+  footer .inner > div > ul li {padding:0 15px; }
+  .footer_bind > dl:first-of-type {margin-right:0px}
+  .footer_bind > div {margin-right:0;}
 }

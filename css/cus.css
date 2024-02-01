@@ -116,6 +116,13 @@ background:#7E8184; display:block;}
 .board_type_toggle dt {color:#333; font-size:18px; font-weight:300; transition:all 0.3s;}
 .qa .board_type_toggle dt > span {width:20%; display:inline-block; text-align:center;}
 .qa .board_type_toggle dt > a {width:75%; display:inline-block;}
+.btn_wrap {width:100%; display:flex; justify-content:center; align-items:center;}
+.qa_btn {margin-top:39px; padding:15px 30px; border:1px solid #E1E1E1; border-radius:30px; display:flex; justify-content:center; align-items:center; transition:all 0.3s;}
+.qa_btn span {color:#333}
+.qa_btn:hover{background-color:#8A8A8A;}
+.qa_btn:hover:hover span {color:#E1E1E1;}
+.qa_btn:hover:hover img {content: url('../image/cus/icon_rou_more_hover.png');}
+.qa_btn span {margin-right:20px;}
 dt.active {background: #e0f5f5;}
 dt.active > * {font-weight:600;}
 dt.active img.view_btn {content: url('../image/cus/btn_up.png'); width:24px; height:24px;}
