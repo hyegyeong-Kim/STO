@@ -107,6 +107,8 @@ background:#7E8184; display:block;}
 
 
 /*qa*/
+.qa {display:block !important;}
+.content .inner span {color:#444}
 .qa .tab_wrap .tab_type_01.demo {flex-wrap:wrap;}
 .qa .tab_wrap .tab_type_01.demo > li {font-size:18px; font-weight:400}
 .qa .tab_wrap .tab_type_01.demo > li > a {margin-top:8px; margin-right:8px; color:#555555; border:1px solid #E1E1E1; border-radius:8px;}
